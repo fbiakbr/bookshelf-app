@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container justify-content-center">
+        <a class="navbar-brand" href="#">Bookshelf App</a>
+      </div>
+    </nav>
+
+    <!-- Input Data Buku -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title text-center">Masukkan Buku Baru</h5>
+              <div class="container">
+                <form action="">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <label for="judul" class="form-label">Judul</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="judul"
+                        placeholder="Masukkan Judul Buku"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="penulis" class="form-label">Penulis</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="penulis"
+                        placeholder="Masukkan Penulis Buku"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="penulis" class="form-label">Tahun</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="penulis"
+                        placeholder="Masukkan Tahun Buku"
+                        min="1"
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <div class="form-check form-switch">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="flexSwitchCheckDefault"
+                          >Selesai dibaca</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-3 d-grid">
+                      <button type="submit" class="btn btn-primary btn-d">
+                        Masukkan Buku
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cari Buku -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card mt-4 pb-4">
+            <div class="card-body">
+              <h5 class="card-title text-center">Cari Buku</h5>
+            </div>
+            <div class="container">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Masukkan Judul Buku"
+                  aria-label="Masukkan Judul Buku"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Cari Buku
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Belum Selesai Dibaca -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title text-center">Belum Selesai Dibaca</h5>
+            </div>
+            <div class="container table-responsive text-center">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Penulis</th>
+                    <th scope="col">Tahun</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Naruto</td>
+                    <td>Masashi Kishimoto</td>
+                    <td>2003</td>
+                    <td>
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fas fa-pencil-alt"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selesai Dibaca -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title text-center">Selesai Dibaca</h5>
+            </div>
+            <div class="container table-responsive text-center">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Penulis</th>
+                    <th scope="col">Tahun</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Uncharted</td>
+                    <td>Neil Druckmann</td>
+                    <td>2007</td>
+                    <td>
+                      <button type="button" class="btn btn-primary btn-sm">
+                        <i class="fas fa-pencil-alt"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <p class="text-center text-white">
+              &copy; 2022 Bookshelf App. Designed by
+              <a
+                href="https://github.com/fbiakbr"
+                target="_blank"
+                class="text-white"
+                >Febiadi Wisnu Akbar</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+  </body>
+</html>
